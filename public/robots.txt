@@ -4,6 +4,6 @@ Allow: *
 Disallow: /css/
 Disallow: /js/
 Disallow: /img/icons/
-Disallow: /send.php
+Disallow: /img/og/
 
 Sitemap: https://spetsavtotekh124.ru/sitemap.xml
