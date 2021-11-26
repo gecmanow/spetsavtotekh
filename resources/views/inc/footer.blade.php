@@ -1,6 +1,6 @@
-<footer class="footer">
+<footer class="footer" itemscope itemtype="http://schema.org/Organization">
     <div class="container">
-        <div class="row footer_row" itemscope itemtype="http://schema.org/Organization">
+        <div class="row footer_row">
             <div class="col footer_col-logo">
                 <span class="footer_logo" itemprop="name">СпецАвтоТех</span>
             </div>
@@ -58,7 +58,7 @@
             <div class="col">
                 <p class="footer_text">Данный информационный ресурс не является публичной офертой.</p>
                 <p class="footer_text">Любое использование либо копирование материалов сайта, элементов дизайна и оформления не допускается.</p>
-                <p class="footer_text">© 2021 spetsavtotekh124.ru</p>
+                <p class="footer_text">© 2021 spetsavtotekh124.ru - аренда спецтехники в <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Красноярск</span>е</p>
                 <div class="footer_developer">
                     <span class="footer_text">Разработка и продвижение сайта - </span>
                     <a href="https://vk.com/gecmanow" target="_blank">Ivan Getsmanov</a>
