@@ -1046,6 +1046,32 @@ main {
     border-color: #000000;
     color: #000000;
 }
+.error_back {
+    background-color: #ffe600;
+    color: #000000;
+    border-color: #000000;
+    font-weight: bold;
+}
+.error_back:hover {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffe600;
+}
+.error_back:focus {
+    background-color: #ffe600;
+    border-color: #000000;
+    color: #000000;
+}
+.error_back:active {
+    background-color: #ffc900!important;
+    border-color: #000000!important;
+    color: #000000!important;
+}
+.error_back:focus-visible {
+    background-color: #ffc900;
+    border-color: #000000;
+    color: #000000;
+}
 .label_desc {
     display: block;
 }

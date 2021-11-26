@@ -8,7 +8,7 @@ header('Strict-Transport-Security: max-age=31536000; includeSubDomains; preload'
 header("X-Content-Type-Options: nosniff");
 header("Cache-Control: max-age=0, public");
 ?>
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" prefix="og: http://ogp.me/ns#">
 <head>
     <meta charset="utf-8"/>
@@ -45,20 +45,15 @@ header("Cache-Control: max-age=0, public");
     <meta name="theme-color" content="#ffffff">
 </head>
 <body class="thanks">
-    <!-- Yandex.Metrika counter -->
-    <script>
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-        ym(76961626, "init", {
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true
-        });
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/76961626" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
-    @yield('content')
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>Ой... возникла ошибка</h1>
+            <h2>@yield('code') - @yield('message')</h2>
+            <h3>Возможно, вы хотели попасть сюда:</h3>
+            <a href="{{ route('home') }}" class="btn btn-outline-primary error_back">На главную</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
