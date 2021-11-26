@@ -521,8 +521,8 @@ main {
     -o-transform: scale(1.1);
 }
 .footer {
-    height: 500px;
     background-color: #333333;
+    padding-bottom: 4rem;
 }
 .footer_row {
     height: 100%;
@@ -532,19 +532,32 @@ main {
 .footer_col-logo {
     display: flex;
     flex-flow: row;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
 }
 .footer_logo {
     font-style: normal;
     font-weight: normal;
-    font-size: 36px;
+    font-size: 24px;
     line-height: 42px;
     color: #FFFFFF;
     padding: 0 0 0.5rem 0.5rem;
     border-left: 2px solid #ffe600;
     border-bottom: 2px solid #ffe600;
     cursor: default;
+}
+.footer_menu {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+.footer_menu-link {
+    color: #ffffff;
+}
+.footer_menu-link:hover {
+    color: #ffffff;
 }
 .footer_social {
     display: flex;
@@ -555,6 +568,7 @@ main {
 .footer_social-icon {
     fill: #ffe600;
     height: 1.2rem;
+    margin: 0 1rem;
 }
 .footer_social-icon:hover {
     -webkit-transform: scale(1.2);
@@ -569,8 +583,8 @@ main {
 }
 .footer_col-phone {
     display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
     align-items: center;
     align-content: center;
 }
@@ -595,7 +609,7 @@ main {
     display: flex;
     flex-flow: row;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
     align-content: center;
 }
 .footer_callback {
@@ -613,6 +627,12 @@ main {
     border-color: #ffe600;
     color: #000000;
     opacity: 0.8;
+}
+.footer_contacts {
+    padding-inline-start: 0;
+}
+.footer_contacts li {
+    list-style-type: none;
 }
 .footer_text {
     margin: 0;
@@ -1192,11 +1212,21 @@ main {
     .photos_item a:first-child {
         margin-right: 0;
     }
-    .footer_social {
-        justify-content: space-between;
+    .footer_row {
+        flex-flow: column nowrap;
     }
-    .footer_col-phone {
-        display: none;
+    .footer_col-logo {
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_menu {
+        align-items: center;
+    }
+    .footer_col-callback {
+        justify-content: center;
+    }
+    .footer_col-logo, .footer_menu, .footer_col-phone, .footer_col-callback {
+        padding: 1rem 15px;
     }
 }
 @media screen and (max-width: 575px) {
@@ -1267,12 +1297,6 @@ main {
     }
     .footer_row {
         flex-flow: column nowrap;
-    }
-    .footer_col-logo {
-        margin-bottom: 1rem;
-    }
-    .footer_col-callback {
-        display: none;
     }
 }
 @media screen and (max-width: 413px) {
