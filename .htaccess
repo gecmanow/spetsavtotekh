@@ -1,3 +1,11 @@
-RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.spetsavtotekh124.ru$ [NC]
-RewriteRule ^(.*)$ http://spetsavtotekh124.ru/$1 [R=301,L]
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+
+    RewriteRule ^(.*)$ public/$1 [L]
+
+</IfModule>

@@ -1,9 +1,0 @@
-User-agent: *
-Host: https://spetsavtotekh124.ru/
-Allow: *
-Disallow: /css/
-Disallow: /js/
-Disallow: /img/icons/
-Disallow: /send.php
-
-Sitemap: https://spetsavtotekh124.ru/sitemap.xml
